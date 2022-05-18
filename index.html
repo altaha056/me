@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="scroll-smooth selection:bg-lime-400 selection:text-emerald-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body
+    class="bg-cover bg-no-repeat bg-[url('/public/img/background/bg.svg')] text-teal-50 transition-all duration-1000"
+  >
+    <!-- navbar -->
+    <div class="backdrop-blur-md sticky top-0 z-50">
+      <nav
+        class="py-3 px-5 sm:px-7 sm:py-4 bg-white/10 md:flex md:items-center md:justify-between"
+      >
+        <div class="flex justify-between items-center">
+          <a href="#">
+            <span
+              class="cursor-pointer flex text-2xl items-center duration-200"
+            >
+              <img
+                src="/public/img/icon/logo_altaha.svg"
+                alt="logo altaha"
+                class="h-5 mr-3"
+              />
+              <div>Altaha</div>
+            </span>
+          </a>
+
+          <span class="text-3xl cursor-pointer md:hidden block my-auto">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <ul
+          class="md:flex md:items-center z-[-1] md:z-auto md:static absolute right-0 md:w-auto md:py-0 md:pl-0 px-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200 gap-12 text-right md:text-teal-50 text-emerald-900 md:bg-white/0 bg-white/90 font-light backdrop-blur-none"
+        >
+          <li class="my-6 md:my-0">
+            <a
+              href="#"
+              class="text-lg duration-200 md:hover:text-emerald-200 hover:text-emerald-500"
+              >Home</a
+            >
+          </li>
+          <li class="my-6 md:my-0">
+            <a
+              href="#portfolio"
+              class="text-lg duration-200 md:hover:text-emerald-200 hover:text-emerald-500"
+              >Portfolio</a
+            >
+          </li>
+          <li class="my-6 md:my-0">
+            <a
+              href="#contact"
+              class="text-lg duration-200 md:hover:text-emerald-200 hover:text-emerald-500"
+              >Contact</a
+            >
+          </li>
+          <li class="my-6 md:my-0 flex gap-5">
+            <a
+              href="https://www.linkedin.com/in/al-taha/"
+              class="text-xl duration-200 md:hover:text-emerald-200 hover:text-emerald-500 flex items-center cursor-pointer"
+              target="blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a
+              href="https://www.behance.net/altahaa"
+              class="text-2xl duration-200 md:hover:text-emerald-200 hover:text-emerald-500 flex items-center cursor-pointer"
+              target="blank"
+              ><ion-icon name="logo-behance"></ion-icon
+            ></a>
+            <a
+              href="https://www.instagram.com/qltqhq/"
+              class="text-xl duration-200 md:hover:text-emerald-200 hover:text-emerald-500 flex items-center cursor-pointer"
+              target="blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- altaha home section -->
+    <div class="min-h-screen p-5 min-w-full flex transition-all duration-500">
+      <div class="container max-w-screen-lg lg:w-3/4 my-auto mx-auto">
+        <h1
+          class="text-5xl md:text-6xl transition-all duration-500 font-medium"
+        >
+          Hello there, welcome to<br />my personal website
+        </h1>
+        <!-- white line -->
+        <div
+          class="h-1 w-40 md:w-72 bg-teal-50 my-20 transition-all duration-700"
+        ></div>
+
+        <div class="flex gap-3 md:gap-6 sm:gap-5 mt-5">
+          <div
+            class="h-auto bg-[url('/public/img/altaha.jpg')] bg-cover sm:bg-top bg-left mt-1 w-16 md:w-24 transition-all duration-300"
+            alt="altaha's profile picture"
+          ></div>
+          <div>
+            <p class="sm:w-96 w-72 font-light text-base">
+              My name is Altaha. Coding is my bone, graphic design is my flesh.
+              I really appreciate your time enjoying my artwork below.
+            </p>
+            <div class="flex gap-3 mt-3 font-medium">
+              <a href="#portfolio">
+                <div
+                  class="py-2 px-4 bg-teal-50 text-emerald-900 rounded-md cursor-pointer hover:bg-emerald-900 hover:text-teal-50 transition-all"
+                >
+                  Let's go
+                </div></a
+              >
+              <a href="#contact">
+                <div
+                  class="py-2 px-4 bg-white/10 text-teal-50 rounded-md cursor-pointer hover:bg-teal-50 hover:text-emerald-900 transition-all"
+                >
+                  Contact
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mt to portfolio -->
+    <div id="portfolio"></div>
+    <div class="mt-32"></div>
+
+    <!-- portfolio section -->
+    <div class="min-h-screen p-5 min-w-full flex transition-all duration-500">
+      <div class="container max-w-screen-lg lg:w-3/4 my-auto mx-auto">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <img
+            src="/public/img/porto/poster trick 2022.jpg"
+            class="w-auto h-auto"
+            alt=""
+          />
+          <p class="text-3xl w-auto h-72 font-extralight">
+            Featuring my best artworks. Typography, layout, and quality
+            background is my main concern while designing.
+          </p>
+          <img src="/public/img/porto/1.jpg" alt="" class="w-auto h-auto" />
+          <img src="/public/img/porto/2.jpg" alt="" class="w-auto h-auto" />
+          <img
+            src="/public/img/porto/3 online.jpg"
+            alt=""
+            class="w-auto h-auto"
+          />
+          <img src="/public/img/porto/3.jpg" alt="" class="w-auto h-auto" />
+        </div>
+      </div>
+    </div>
+
+    <!-- mt to website-artwork -->
+    <div id="website-artwork"></div>
+    <div class="mt-32 md:mt-48"></div>
+
+    <!-- website-artwork section -->
+    <div class="min-h-screen p-5 min-w-full flex transition-all duration-500">
+      <div class="container max-w-screen-lg lg:w-3/4 my-auto mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <p class="text-3xl w-auto h-96 font-extralight">
+            The main course, these are websites that i've created and i still
+            maintain some of them.
+          </p>
+          <a
+            href="https://ykisumut.com/"
+            target="blank"
+            class="col-span-2 transition-all duration-300 w-full h-96"
+            alt="altaha's dwp sumut website"
+          >
+            <div
+              class="bg-[url('/public/img/porto/yki.png')] bg-cover h-full w-full hover:scale-95 transition-all duration-300"
+            ></div>
+          </a>
+          <a
+            href="https://alkhuwarizmi.org/"
+            target="blank"
+            class="col-span-2 transition-all duration-300 w-full h-96"
+            alt="altaha's dwp sumut website"
+          >
+            <div
+              class="bg-[url('/public/img/porto/alkhuwarizmi.png')] bg-cover h-full w-full hover:scale-95 transition-all duration-300"
+            ></div>
+          </a>
+          <p class="text-lg w-auto font-extralight h-96 grid content-center">
+            After several projects with many clients, i can say it's not only
+            about code and design that makes it perfect. But also the content
+            itself. The power of words can make people amaze.
+          </p>
+          <div
+            class="text-lg font-extralight grid h-96 content-center gap-5 col-span-2 sm:col-span-1 justify-items-center"
+          >
+            <p>Powered with</p>
+            <div
+              class="grid grid-cols-3 gap-5 w-2/3 items-center justify-items-center"
+            >
+              <img
+                src="/public/img/icon/powered_tools/icons8-golang.svg"
+                alt="golang"
+                class="w-12 grayscale hover:filter-none contrast-200"
+              />
+              <img
+                src="/public/img/icon/powered_tools/icons8-javascript.svg"
+                alt="javascript"
+                class="w-12 grayscale hover:filter-none"
+              />
+              <img
+                src="/public/img/icon/powered_tools/PHP-logo.svg"
+                alt="php"
+                class="w-16 grayscale hover:filter-none contrast-200"
+              />
+              <img
+                src="/public/img/icon/powered_tools/React-icon.svg"
+                alt="react"
+                class="w-12 grayscale hover:filter-none"
+              />
+              <img
+                src="/public/img/icon/powered_tools/Octicons-mark-github.svg"
+                alt="github"
+                class="w-12 grayscale hover:filter-none"
+              />
+              <img
+                src="/public/img/icon/powered_tools/Laravel.svg"
+                alt="laravel"
+                class="w-12 grayscale hover:filter-none brightness-200 shadow-2xl"
+              />
+            </div>
+          </div>
+          <a
+            href="https://dwpsumut.org/pusat/"
+            target="blank"
+            class="col-span-2 transition-all duration-300 w-full h-96"
+            alt="altaha's dwp sumut website"
+          >
+            <div
+              class="bg-[url('/public/img/porto/dwp.png')] bg-cover h-full w-full hover:scale-95 transition-all duration-300"
+            ></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- mt to contact -->
+    <div id="contact"></div>
+
+    <!-- contact section -->
+    <div class="min-h-screen p-5 min-w-full flex transition-all duration-500">
+      <div class="container max-w-screen-lg lg:w-3/4 my-auto mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 content-center">
+          <div class="col-span-1 h96 w-64">
+            <p class="text-3xl font-extralight">
+              That's all.<br />
+              Thank you for your attention.<br />
+              Feel free to reach me out
+            </p>
+          </div>
+          <div
+            class="col-span-2 sm:col-span-1 sm:my-auto mt-20 transition-all duration-500"
+          >
+            <div
+              class="text-lg font-extralight grid gap-5 transition-all duration-500"
+            >
+              <div>
+                <a
+                  target="blank"
+                  href="https://www.linkedin.com/in/al-taha/"
+                  class="flex items-center gap-3"
+                  ><ion-icon class="text-2xl" name="logo-linkedin"></ion-icon
+                  >al-taha</a
+                >
+              </div>
+              <div>
+                <a
+                  target="blank"
+                  href="https://www.behance.net/altahaa"
+                  class="flex items-center gap-3"
+                  ><ion-icon class="text-2xl" name="logo-behance"></ion-icon
+                  >altahaa</a
+                >
+              </div>
+              <div>
+                <a
+                  target="blank"
+                  href="https://www.instagram.com/qltqhq/"
+                  class="flex items-center gap-3"
+                  ><ion-icon class="text-2xl" name="logo-instagram"></ion-icon
+                  >qltqhq</a
+                >
+              </div>
+              <div>
+                <a
+                  target="blank"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=altahabinsyafraidi@gmail.com"
+                  class="flex items-center gap-3"
+                  ><ion-icon class="text-2xl" name="mail-outline"></ion-icon
+                  >altahabinsyafraidi@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mt to footer -->
+    <div id="footer" class="my-20">
+      <div class="md:flex p-5 md:p-0 gap-5 justify-center">
+        <img
+          src="/public/img/icon/logo_altaha.svg"
+          alt=""
+          class="h-12 md:h-10 pb-5 md:pb-0"
+        />
+        <div class="text-base font-extralight">
+          <p>Altaha &copy; 2022</p>
+          <p>Medan, Indonesia</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("backdrop-blur-md"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("backdrop-blur-md"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
